@@ -1,5 +1,7 @@
 package com.crm.qa.pages;
 
-public class TaskPage {
+import com.crm.qa.base.TestBase;
+
+public class TaskPage extends TestBase{
 
 }

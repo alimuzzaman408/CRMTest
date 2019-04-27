@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.ConTactsPageTest">
+      <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
-          <include name="verifyContactsLabelTest"/>
           <include name="setUp"/>
-          <include name="validateCreateNewContactsTest"/>
-          <include name="checkbosTest"/>
-          <include name="multiplecheckbosTest"/>
+          <include name="tearDown"/>
+          <include name="contactsLinkClickTest"/>
+          <include name="verifyUserLabel"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.ConTactsPageTest -->
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
