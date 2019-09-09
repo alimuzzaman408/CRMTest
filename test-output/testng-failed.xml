@@ -7,7 +7,6 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="contactsLinkClickTest"/>
           <include name="verifyUserLabel"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->

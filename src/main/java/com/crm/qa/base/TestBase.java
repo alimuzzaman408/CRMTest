@@ -22,7 +22,8 @@ public class TestBase {
 	public static WebEventListener eventListener;
 
 	public TestBase(){
-		try{prop=new Properties();
+		try
+		{prop=new Properties();
 		FileInputStream ip=new FileInputStream("C:\\Eclipse Java\\JavaWorkSpace\\CRMTest\\"
 				+ "src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 		prop.load(ip);

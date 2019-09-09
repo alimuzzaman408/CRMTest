@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath="//td[contains(text(),'User: Md Alimuzzaman')]")
+	@FindBy(xpath="//td[contains(text(),'User: shapan sarker')]")
 	
 	WebElement userlabel;
 
