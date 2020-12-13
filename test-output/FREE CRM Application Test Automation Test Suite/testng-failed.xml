@@ -6,12 +6,6 @@
   </listeners>
   <test name="Free CRM App Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
       <class name="com.crm.qa.testcases.ConTactsPageTest">
         <methods>
           <include name="verifyContactsLabelTest"/>
@@ -21,12 +15,20 @@
           <include name="multiplecheckbosTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ConTactsPageTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="crmLogoTest"/>
+          <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
       <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="contactsLinkClickTest"/>
           <include name="verifyUserLabel"/>
+          <include name="verifyHomePageTitleTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>

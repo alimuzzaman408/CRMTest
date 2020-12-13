@@ -10,7 +10,7 @@ public class JDBCExample {
 
 
 	public static void main(String[] args) throws SQLException {
-		String url="jdbc:mysql://localhost:3306/abc";
+		String url="jdbc:mysql://localhost:3306/marsqlclass";
 		String un="root";
 		String pass="root";
 
@@ -19,15 +19,16 @@ public class JDBCExample {
 		
 		//Create statement
 		Statement stm=con.createStatement();
-		String s="select * from employee ";
+		String s="select * from department ";
 		//String s="insert into employee values(105,'shapan')";
        // stm.executeUpdate(s);
 		//Execute Statement
 		ResultSet rs=stm.executeQuery(s);
 		//process the result
 		while(rs.next()){
-			
-			System.out.println(rs.getString("IDnumber")+"  "+rs.getString("Name"));
+			int d_id=rs.getInt("DepartmentID");
+			String dname=rs.getString("DepartmentName");
+			System.out.println(d_id+"..........>"+dname);
 			
 		}
 
